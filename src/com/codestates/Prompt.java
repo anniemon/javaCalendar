@@ -25,9 +25,7 @@ public class Prompt {
                 continue;
             }
             Calendar cal = new Calendar();
-            int maxDate = cal.getMaxDaysOfMonth(month);
-
-            cal.printCalendar(maxDate);
+            cal.printCalendar(month);
             System.out.println();
         }
 

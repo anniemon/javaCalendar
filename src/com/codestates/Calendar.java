@@ -10,11 +10,14 @@ public class Calendar {
         return days[month - 1];
     }
 
-    public void printCalendar(int maxDate) {
+    public void printCalendar(int month) {
     System.out.println("일  월  화  수  목  금  토");
     System.out.println("----------------------");
 
-    for(int i = 1; i <= maxDate; i++) {
+    Calendar cal = new Calendar();
+    int maxDate = cal.getMaxDaysOfMonth(month);
+
+        for(int i = 1; i <= maxDate; i++) {
         System.out.printf(" %2d", i);
         if(i % 7 == 0) {
             System.out.println();
