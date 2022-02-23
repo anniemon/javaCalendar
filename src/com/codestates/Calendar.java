@@ -14,8 +14,8 @@ public class Calendar {
     System.out.println("일  월  화  수  목  금  토");
     System.out.println("----------------------");
 
-    Calendar cal = new Calendar();
-    int maxDate = cal.getMaxDaysOfMonth(month);
+
+    int maxDate = getMaxDaysOfMonth(month);
 
         for(int i = 1; i <= maxDate; i++) {
         System.out.printf(" %2d", i);
